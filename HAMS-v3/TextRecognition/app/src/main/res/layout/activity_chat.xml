@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/simple_backdround"
+        android:scaleType="fitXY"/>
+
+    <include
+        android:id="@+id/chat_app_bar"
+        layout="@layout/app_bar_layout"></include>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chatRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="609dp"
+        android:layout_marginTop="58dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/messageText"
+            android:layout_width="315dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_weight="8"
+            android:hint="Enter Message"
+            android:background="#ccc"
+            android:textColor="#fff"
+            android:padding="10dp"
+            android:textSize="18sp"></EditText>
+
+        <ImageButton
+            android:id="@+id/sendBtn"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="#6200EE"
+            android:scaleType="fitXY"
+            android:src="@drawable/right_send"></ImageButton>
+
+    </LinearLayout>
+
+</RelativeLayout>

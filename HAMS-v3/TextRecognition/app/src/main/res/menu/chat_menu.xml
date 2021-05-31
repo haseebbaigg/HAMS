@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Account Settings" android:id="@+id/account_setting" />
+    <item android:title="View Friends" android:id="@+id/friends" />
+    <item android:title="All Users" android:id="@+id/users" />
+    <item android:title="All Doctors" android:id="@+id/doctors" />
+    <item android:title="Logout" android:id="@+id/logout" />
+
+</menu>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/CurrentUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Display Name"
+            android:textSize="16sp"
+            android:textColor="@color/cardview_light_background"
+            app:layout_constraintBottom_toTopOf="@+id/LastSeen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></TextView>
+
+        <TextView
+            android:id="@+id/LastSeen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Seen"
+            android:textSize="14sp"
+            android:textColor="@color/cardview_light_background"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CurrentUserName"></TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

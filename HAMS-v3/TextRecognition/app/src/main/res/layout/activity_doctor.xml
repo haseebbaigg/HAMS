@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".StartActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <include
+        layout="@layout/main_toolbar"
+        ></include>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/login_background" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logomaker9" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250dp"
+                android:textStyle="bold"
+                android:text="Choose Doctor Options"
+                android:textColor="#F7F7F8"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/DocregisterBtn"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:background="#6200EE"
+                android:textColor="#fff"
+                android:layout_marginTop="360dp"
+                android:layout_marginEnd="30px"
+                android:layout_marginStart="30px"
+                android:text="Need a new account" />
+
+            <Button
+                android:id="@+id/DocloginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginTop="280dp"
+                android:textColor="#fff"
+                android:background="#6200EE"
+                android:layout_marginEnd="30px"
+                android:layout_marginStart="30px"
+                android:text="Already have an account" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_gravity="start">
+
+        <include
+            layout="@layout/main_nav_drawer"
+            ></include>
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
